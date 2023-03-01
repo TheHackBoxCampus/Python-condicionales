@@ -1,23 +1,19 @@
-#Ejercicio 9
-# Construya un algoritmo en Python, que permita ingresar la
-# información de un empleado e imprima el nombre, los apellidos y la antigüedad. 
-# Los datos que se deben solicitar
-# son los siguientes:
-#* Nombre 
-#* Teléfono 
-#* Año de ingreso a la empresa
-#* Apellidos 
-#* Edad.
+#Ejercicio 10
+#En su casa le solicitan que realice un algoritmo en Python,
+#que permita calcular el valor a pagar por concepto de
+#energía eléctrica. Los datos que se conocen son los
+#siguientes:
+#- Mes de consumo - Valor kw
+#-Total kw consumido en el mes - estrato
 
-nombre = input("Digite su nombre ")
-apellido = input("Digite su apellido ")
-edad = input("Digite su edad ")
-telefono = int(input("Digite su numero de teléfono "))
-ingreso = int(input("Digite el año en el que ingreso a la empresa "))
-actual = 2023
-antiguedad = actual - ingreso
-
-if nombre != "" and edad != "":
-    print(f"El empleado de nombre: {nombre} {apellido} de {edad} años de edad, con numero de telefono {telefono}, tiene una antiguedad de {antiguedad} años en la empresa")
-else:
-    print("Sus datos estan incorrectos")
+def calc():
+    stratumsValues = [1,233,291,496,583,700] # example values 
+    stratus = int(input("De que estrato es: "))
+    numberMonth = int(input("Cuantos meses de costo debe: "))
+    kwMonth = int(input("Cuanto gasto durante el mes: "))
+    value_kw = stratumsValues[stratus]
+    consumption = (kwMonth * value_kw) * numberMonth
+    result = f"El consumo mensual fue {consumption}, durante {numberMonth} mes/meses"
+    return result
+    
+print(calc())
