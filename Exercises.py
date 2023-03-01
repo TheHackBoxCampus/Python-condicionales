@@ -1,18 +1,15 @@
-#Ejercicio 2 
-#2. En la jerarquía de operadores, cuáles son los que más
-# prioridad tienen cuando el intérprete de Python los evalúa?
+#Ejercicio 3
+#3. Si hay operadores de igual precedencia, en qué orden se ejecutan?
+#A. De izquierda a derecha
+#B. De derecha a izquierda
 
-def prioridad():
+def precedencia():
     return print(
-    f""" 
-    Mayor prioridad
-    ---------------
-    1 Operaciones entre parentesis \t\t\t\t\t\t () 
-    2 Potencia \t\t\t\t\t\t\t\t\t ** 
-    3 Multiplicación y División, módulo o residuo, División entenera       *, /, %, // 
-    4 Suma y resta \t\t\t\t\t\t\t\t+, -
-    --------------
-    Menor prioridad
+    f"""
+    -------------------------------------------------------------------
+    LOS OPERADORES QUE TIENEN IGUAL PRECEDENCIA SE EJECUTAN DE IZQUIERDA
+    A DERECHA.
+    -------------------------------------------------------------------
     """)
 
-prioridad()
+precedencia()
