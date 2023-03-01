@@ -1,15 +1,11 @@
-#Ejercicio 3
-#3. Si hay operadores de igual precedencia, en qué orden se ejecutan?
-#A. De izquierda a derecha
-#B. De derecha a izquierda
+#Ejercicio 4
+#Que son las expresiones regulares
+import re
 
-def precedencia():
-    return print(
-    f"""
-    -------------------------------------------------------------------
-    LOS OPERADORES QUE TIENEN IGUAL PRECEDENCIA SE EJECUTAN DE IZQUIERDA
-    A DERECHA.
-    -------------------------------------------------------------------
-    """)
+Ejemplo = re.compile('a[3-5]+') # coincide con una letra, seguida de al menos 1 dígito entre 3 y 5
 
-precedencia()
+print("""
+------------------------------------------------------------
+Una expresión regular es una cadena de caracteres que es utilizada para describir o encontrar patrones dentro de otros strings
+------------------------------------------------------------
+""")
